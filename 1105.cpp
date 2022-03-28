@@ -1,55 +1,20 @@
 #include<stdio.h>
-int main ()
-{
-	int a,i,temp,k,r=0;
-	scanf("%d",&a);
-	{
-		temp=a-2;
-	
-	for(i=3;i<temp;i++)
-	{
-	if(temp%i==0)
-	{
-		break;
-		r=1;
-	}
-	if(i=temp&&r==0)
-		{
-		printf("2+%d",temp);
-		return 0;
-		}
-	}
-	
-	
-	if(a==4)
-	{
-	printf("2+2");
+int fun(int n){
+	int i=2;
+	for(i;i<n;i++)
+		if(n%i==0)
+			return 0;
+	return 1;
+}
+
+int main(){
+	int n,i;
+	while(~scanf("%d",&n))
+		for(i=2;1;i++)
+			if(fun(i)&&fun(n-i))
+			{
+				printf("%d+%d\n",i,n-i);
+				break;
+			}
 	return 0;
-	}
-	
-	for(i=3;i<a-2;i++)
-	{
-		for(k=3;k<i;k++)
-		{
-			if(i%k==0)
-			break;
-		}
-		if(k=i)
-		temp=a-i;
-		
-		for(k=3;k<temp;k++)
-		{
-			if(i%k==0)
-			break;
-		}
-		
-		if(k=temp)
-		{
-		printf("%d+%d",i,temp);	
-		return 0;
-		}
-	}
-	}
-	
-	
 }
