@@ -9,7 +9,7 @@ int main()
 		a[i]=1;
 		for(i=2;i<=k;i++)
 			for(j=i-1;j<n;j+=i)
-			a[j]=1-a[j];
+			a[j]=1-a[j];// ¿ª¹Ø±ä»»
 		for(i=0;i<n;i++)
 			if(a[i])
 			printf("%d\n",i+1);
