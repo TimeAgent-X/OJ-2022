@@ -1,10 +1,10 @@
 #include<stdio.h>
 int fun(int n){
 	int i=2;
-	for(i;i<n;i++)
+	for(i;i<n;i++)	 // 可进一步减少循环次数
 		if(n%i==0)
-			return 0;
-	return 1;
+			return 0;	// 非
+	return 1;	// 是
 }
 
 int main(){
